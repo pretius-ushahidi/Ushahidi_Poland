@@ -1,0 +1,67 @@
+WELCOME
+-------
+
+Ushahidi Poland is a customized version of the core Ushahidi application that
+was used to deploy a flood disaster recovery system:
+
+http://alert.powodz.ngo.pl
+
+It's based on Ushahidi git master branch from 7th of June 2010 with a lot
+of custom modifications (see below), backports from Ushahidi_Haiti version.
+
+
+CREDITS
+-------
+
+This project was a joint effort of Stocznia NGO organization
+(http://stocznia.org.pl) - main driver for this portal to happen and
+Pretius company (http://pretius.com), who donated the work and code.
+
+
+
+MODIFICATIONS
+-------------
+
+The following modifications have been made:
+
+- Polish (custom, in our opinion to be reviewed) translation
+- Implemented Incident Archive
+- Added displaying of Incidents ID's (public/admin site) in order to simplify
+  identification when someone contacts the phone support
+- Added custom fields validation (all custom fields are required)
+- Some custom fields are hidden (obligated by Polish law) - this unfortunately
+  is hardcoded (using cutom fileds ID's)
+- Added popup help dialog (when adding an incident - below the title)
+- Categories on the main page are sorted
+- Added missing notifications to site administrators (when an Incident is
+  submitted)
+- Backported choosing "Master Category" from Ushahidi_Haiti (when submitting
+  an Incident)
+- Created custom theme (based on NGO.pl website)
+- Some functionalities were disabled (e.g. SMS notifications)
+
+
+INSTALLATION
+------------
+
+In order to deploy this Ushahidi instance one has to:
+
+1. Create a clean database using: 01-ushahidi-clean.sql
+2. Applay the following patches to the database:
+
+- 02-alert-category-dict.sql - dictionary with custom categories
+- 02-alert-form-dict.sql - dictionary with custom forms
+- 02-form_field.sql - dictionary with custom form fields
+- 03-incident-archived.sql - modification to 'incident' table in order to
+  "Archive" functionality to work
+
+3. Proceed as normal Ushahidi installation requires
+
+
+CONTACT DETAILS
+---------------
+
+You can contact us at:
+
+email: ushahidi@pretius.com
+
