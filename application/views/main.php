@@ -67,12 +67,6 @@
 							</ul>
                             <!-- / category filters -->
 
-                                <!-- ngo logos {{{ -->
-                                <div align="center" style="margin: 10px 0 10px 0;">
-                                    <img src="<?php url::base() ?>media/img/partnerzy.gif" alt="Partnerzy akcji Razem Powodzianom" width="280"/>
-                                </div>
-                                <!-- ngo logos }}} -->
-							
 							<?php
 							if ($layers)
 							{

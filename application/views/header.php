@@ -123,13 +123,13 @@
 
 <body id="page">
 
-    <!-- header {{{ -->
+    <!-- header {{{ 
 	<div id="shortcode-header-wrap">
     	<p id="shortcode-header-info">
             W razie potrzeby kontaktu, numer naszej infolinii to: <span>0 801 112 112</span>
         </p>
     </div>
-    <!-- header }}} -->
+    header }}} -->
 
 	<!-- wrapper -->
 	<div class="rapidxwpr floatholder">
@@ -178,7 +178,7 @@
 
             <!-- ngo logos {{{ -->
             <div class="submit-incident clearingfix">
-                <img src="<?php echo url::base(); ?>/media/img/razem_powodzianom.jpeg" alt="Logo Razem Powodzianom"/>
+                <img src="<?php echo url::base(); ?>/media/img/wola-logo.jpg" alt="Logo Wola"/>
             </div>
             <!-- ngo logos }}} -->
 
