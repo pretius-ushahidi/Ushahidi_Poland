@@ -215,7 +215,7 @@ $("#incident_ampm option[value='"+ampm+"']").attr("selected","true");
                                     <?php /*print form::dropdown('select_city',$cities,'', ' class="select" '); */?>
 
                                     <p>
-                                    Prosimy o wpisanie dokładnej nazwy ulicy zaraz po nazwie miasta i dzielnicy np. "Warszawa, Wola, Marcina Kasprzaka"
+                                    Prosimy o wpisanie dokładnej nazwy ulicy zaraz po nazwie miasta i dzielnicy np. "Warszawa, Wola, ul. Marcina Kasprzaka. Możesz użyć odnajdowania używając poniżej mapki. Wpisz proszę dokładny adres, jeżeli lokalizacja zostanie odnaleziona, czerwony marker wskaże ją na mapie."
                                     </p>
 								</div>
 								<?php
@@ -224,7 +224,7 @@ $("#incident_ampm option[value='"+ampm+"']").attr("selected","true");
 								<div class="report_row">
 									<div id="divMap" class="report_map"></div>
 									<div class="report-find-location">
-										<?php print form::input('location_find', 'Warszawa, Wola, ', 'title='.Kohana::lang('ui_main.location_example').' class="findtext"'); ?>
+										<?php print form::input('location_find', 'Warszawa, Wola, ul. ', 'title='.Kohana::lang('ui_main.location_example').' class="findtext"'); ?>
 										<div style="float:left;margin:9px 0 0 5px;"><input type="button" name="button" id="button" value="<?php echo Kohana::lang('ui_main.find_location'); ?>" class="btn_find" /></div>
 										<div id="find_loading" class="report-find-loading"></div>
 										<div style="clear:both;" id="find_text"><?php echo Kohana::lang('ui_main.pinpoint_location'); ?>.</div>
@@ -236,12 +236,12 @@ $("#incident_ampm option[value='"+ampm+"']").attr("selected","true");
                                     <?php
 
                                     if($form['location_name'] == "") {
-                                        $location = "Warszawa, Wola, ";
+                                        $e_l = "Warszawa, Wola, ul. ";
                                     } else {
-                                        $location = $form['location_name'];
+                                        $e_l = $form['location_name'];
                                     }
 
-                                    print form::input('location_name', $location, ' class="text long"');
+                                    print form::input('location_name', "$e_l", ' class="text long"');
 
                                     ?>
 								</div>
