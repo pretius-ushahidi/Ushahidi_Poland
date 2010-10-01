@@ -1,4 +1,4 @@
-﻿$location<?php
+﻿<?php
 /*
  * Copyright (C) 2010 Pretius Sp. z o.o.
  * Copyright (C) 2010 Robert Olejnik <robert.olejnik@gmail.com>

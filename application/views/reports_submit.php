@@ -22,8 +22,8 @@
 						<div class="big-block">
                             <h1><?php echo Kohana::lang('ui_main.reports_submit_new'); ?></h1>
 
-                            <!--
                             <!-- help popup {{{ -->
+                            <!--
                             <style>
                             p{
                             	clear:both;
@@ -45,8 +45,8 @@
                             Zanim wypełnisz poniższy formularz, zapoznaj się z  proszę
                             <a href="#" class="tooltip" title="Prosimy o możliwe precyzyjne określanie zarówno potrzeb jak i ofert pomocy (typ, ilość, czas, transport, ewentualne szczególne ograniczenia czy zyczenia itd.)">niniejszą pomocą</a>.
                             </p>
-                            <!-- help popup }}} -->
                             -->
+                            <!-- help popup }}} -->
 
 							<?php
 								if ($form_error) {
