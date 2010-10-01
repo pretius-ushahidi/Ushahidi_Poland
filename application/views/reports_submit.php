@@ -22,7 +22,7 @@
 						<div class="big-block">
                             <h1><?php echo Kohana::lang('ui_main.reports_submit_new'); ?></h1>
 
-
+                            <!--
                             <!-- help popup {{{ -->
                             <style>
                             p{
@@ -46,6 +46,7 @@
                             <a href="#" class="tooltip" title="Prosimy o możliwe precyzyjne określanie zarówno potrzeb jak i ofert pomocy (typ, ilość, czas, transport, ewentualne szczególne ograniczenia czy zyczenia itd.)">niniejszą pomocą</a>.
                             </p>
                             <!-- help popup }}} -->
+                            -->
 
 							<?php
 								if ($form_error) {
@@ -210,8 +211,12 @@ $("#incident_ampm option[value='"+ampm+"']").attr("selected","true");
 											{
 								?>
 								<div class="report_row">
-									<h4><?php echo Kohana::lang('ui_main.reports_find_location'); ?></h4>
-									<?php print form::dropdown('select_city',$cities,'', ' class="select" '); ?>
+                                    <h4><?php echo Kohana::lang('ui_main.reports_find_location'); ?></h4>
+                                    <?php /*print form::dropdown('select_city',$cities,'', ' class="select" '); */?>
+
+                                    <p>
+                                    Prosimy o wpisanie dokładnej nazwy ulicy zaraz po nazwie miasta i dzielnicy np. "Warszawa, Wola, Marcina Kasprzaka"
+                                    </p>
 								</div>
 								<?php
 									 }
