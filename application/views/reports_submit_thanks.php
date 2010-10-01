@@ -25,9 +25,9 @@
 		
                                 <div class="thanks_msg">
                                 <h2>Bardzo ważne!</h2><br/>
-                                Jeżeli nastąpiją jakiekolwiek zmiany odnośnie alertu, który właśnie został zgłoszony, bardzo prosimy o niezwłoczny kontakt, telefoniczny (numer infolinii dostępny jest w górnej części strony) bądź mailowo pod adresem:
+                                Jeżeli nastąpiją jakiekolwiek zmiany odnośnie miejsca, który właśnie zostało zgłoszone, bardzo prosimy o niezwłoczny kontakt, mailowo pod adresem:
                                 <a href="mailto:<?php echo Kohana::config('settings.site_email');?>"><?php echo Kohana::config('settings.site_email');?></a>.<br/>
-                                Unikalne ID Twojego alertu to: <span style="color: #B00000"><?php echo $_GET['alert']; ?></span> - powołaj się na ID podczas kontaktu.<br/><br/>
+                                Unikalne ID Twojego miejsca to: <span style="color: #B00000"><?php echo $_GET['alert']; ?></span> - powołaj się na ID podczas kontaktu.<br/><br/>
                                 <h3>Dziękujemy!</h3><br/>
                                 <a href="<?php echo url::base().'reports' ?>"><?php echo Kohana::lang('ui_main.reports_return');?></a><br /><br /><br />
 									<?php echo Kohana::lang('ui_main.feedback_reports');?><br /><br />
