@@ -36,6 +36,12 @@
 				<a href="http://www.pretius.com/"><img src="<?php echo url::base(); ?>/media/img/pretius-logo.png" alt="Pretius Website" align="absmiddle" /></a>
 			</div>
 			<!-- / footer credits }}} -->
+            
+			<!-- footer credits wola {{{ -->
+            <div class="footer-credits">
+
+                <img src="<?php echo url::base(); ?>/media/img/wola-logo.jpg" alt="Logo Wola"/>
+			<!-- footer credits wola }}} -->
 
 			<!-- footer menu -->
 			<div class="footermenu">
