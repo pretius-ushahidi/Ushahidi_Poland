@@ -219,7 +219,7 @@ $("#incident_ampm option[value='"+ampm+"']").attr("selected","true");
 								<div class="report_row">
 									<div id="divMap" class="report_map"></div>
 									<div class="report-find-location">
-										<?php print form::input('location_find', '', 'title='.Kohana::lang('ui_main.location_example').' class="findtext"'); ?>
+										<?php print form::input('location_find', 'Warszawa, Wola, ', 'title='.Kohana::lang('ui_main.location_example').' class="findtext"'); ?>
 										<div style="float:left;margin:9px 0 0 5px;"><input type="button" name="button" id="button" value="<?php echo Kohana::lang('ui_main.find_location'); ?>" class="btn_find" /></div>
 										<div id="find_loading" class="report-find-loading"></div>
 										<div style="clear:both;" id="find_text"><?php echo Kohana::lang('ui_main.pinpoint_location'); ?>.</div>
@@ -228,7 +228,17 @@ $("#incident_ampm option[value='"+ampm+"']").attr("selected","true");
 								
 								<div class="report_row">
 									<h4><?php echo Kohana::lang('ui_main.reports_location_name'); ?><br /><span class="example"><?php echo Kohana::lang('ui_main.detailed_location_example'); ?></span></h4>
-									<?php print form::input('location_name', $form['location_name'], ' class="text long"'); ?>
+                                    <?php
+
+                                    if($form['location_name'] == "") {
+                                        $location = "Warszawa, Wola, ";
+                                    } else {
+                                        $location = $form['location_name'];
+                                    }
+
+                                    print form::input('location_name', $location, ' class="text long"');
+
+                                    ?>
 								</div>
 			
 								<!-- News Fields -->

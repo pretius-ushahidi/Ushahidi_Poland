@@ -1,4 +1,4 @@
-﻿<?php
+﻿$location<?php
 /*
  * Copyright (C) 2010 Pretius Sp. z o.o.
  * Copyright (C) 2010 Robert Olejnik <robert.olejnik@gmail.com>
@@ -150,7 +150,7 @@ $lang = array(
     'from' => 'Od',
     'full_name' => 'Pełne imie i nazwisko',
     'geolocation_available' => 'Dostępne dane GeoLocalizacyjne',
-    'help' => 'Jak pomóc',    
+    'help' => 'Jak to działa',    
     'has_been' => 'Został',
     'hashtag' => 'Hashtag',
     'hide_this_message'=> 'ukryj tę wiadomość',
@@ -338,7 +338,7 @@ $lang = array(
     'reports_find_location' => 'Znajdź lokalizację w pobliżu',
     'reports_first' => 'Imię',
     'reports_last' => 'Nazwisko',
-    'reports_location_name' => 'Określ nazwę lokalizacji',
+    'reports_location_name' => 'Wpisz proszę nazwę ulicy (dodając ją do "Warszawa, Wola, ")',
     'reports_news' => 'Źródło wiadomości',
     'reports_optional' => 'Informacje dodatkowe',
     'reports_photos' => 'Wyślij zdjęcia',
