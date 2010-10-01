@@ -73,12 +73,10 @@
                                              * fields are... just custom
                                              */
                                             foreach($disp_custom_fields as $custom_field) {
-                                                if ($custom_field['field_id'] == 6 or $custom_field['field_id'] == 8 or $custom_field['field_id'] == 12 or $custom_field['field_id'] == 22) {
                                                     echo "<li>";
                                                     echo "<small>" . $custom_field['field_name'] . "</small>";
                                                     echo $custom_field['field_response'];
                                                     echo "</li>";
-                                                }
                                             }
                                     ?>
                                     <!-- cutom fields }}} -->
@@ -87,8 +85,8 @@
 							<div class="location">
 								<div class="incident-notation clearingfix">
 									<ul>
-										<li><img align="absmiddle" alt="Incident" src="<?php echo url::base(); ?>media/img/incident-pointer.jpg"/> Alert</li>
-										<li><img align="absmiddle" alt="Nearby Incident" src="<?php echo url::base(); ?>media/img/nearby-incident-pointer.jpg"/> Pobliskie alerty</li>
+										<li><img align="absmiddle" alt="Incident" src="<?php echo url::base(); ?>media/img/incident-pointer.jpg"/> Miejsce</li>
+										<li><img align="absmiddle" alt="Nearby Incident" src="<?php echo url::base(); ?>media/img/nearby-incident-pointer.jpg"/> Miejsca w pobliżu</li>
 									</ul>
 								</div>
 								<div class="report-map">
@@ -100,7 +98,7 @@
 				</div>
 		
 				<div class="report-description">
-					<h3>Dokładny Opis Alertu</h3>
+					<h3>Dokładny Opis Miejsca</h3>
 						<div class="content">
 							<?php echo $incident_description; ?>
 							<div class="credibility">
@@ -113,7 +111,7 @@
 						</div>
 						<div class="orig-report">
 							<div class="discussion">
-								<h5>Dodatkowe dane dot. alertu oraz dyskusje&nbsp;&nbsp;&nbsp;(<a href="#comments">Add</a>)</h5>
+								<h5>Dodatkowe dane dot. miejsca oraz dyskusje&nbsp;&nbsp;&nbsp;(<a href="#comments">Add</a>)</h5>
 								<?php
 								foreach($incident_comments as $comment)
 								{
@@ -161,7 +159,7 @@
 					?> 
 
 					<div class="report-description">
-						<h3>Wiadomości związane z alertem</h3>
+						<h3>Wiadomości związane z miejscem</h3>
 						<table>
 							<tr class="title">
 								<th class="w-01">TITLE</th>
@@ -196,7 +194,7 @@
 
 
 					<div class="report-description">
-						<h3>Alerty w bliskiej odległości</h3>
+						<h3>Miejsca w bliskiej odległości</h3>
 						<table>
 							<tr class="title">
 								<th class="w-01">TITLE</th>
